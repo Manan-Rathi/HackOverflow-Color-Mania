@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Color Mania</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section id="header">
+        <h2>THE COLOR MANIA</h2>
+        <div id="value"></div>
+    </section>
+    <section id="prompts">
+        <div class="btn newBtn">
+            <p>Reset!</p>
+        </div>
+        <div class="segmented-control">
+            <input type="radio" name="mode" value="3" id="tab-1" class="easyMode" checked />
+            <label for="tab-1" class="segmented-control__1">
+                <p>EASY</p>
+            </label>
+            <input type="radio" name="mode" value="6" id="tab-2" class="hardMode" />
+            <label for="tab-2" class="segmented-control__2">
+                <p>HARD</p>
+            </label>
+            <div class="segmented-control__color"></div>
+        </div>
+    </section>
+    <section id="content">
+        <div class="cardWrapper">
+            <div class="easyCards">
+                <div class="card easy_card"></div>
+                <div class="card easy_card"></div>
+                <div class="card easy_card"></div>
+            </div>
+            <div class="hardCards">
+                <div class="card hard_card"></div>
+                <div class="card hard_card"></div>
+                <div class="card hard_card"></div>
+            </div>
+        </div>
+    </section>
+    <section id="result">
+        Nice, You WON!
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
